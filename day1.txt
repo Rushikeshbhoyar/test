@@ -1,0 +1,185 @@
+mysql> select * from emp1;
+ERROR 1146 (42S02): Table 'cdac.emp1' doesn't exist
+mysql> create table emp1(
+    -> emp_no int,
+    -> emp_dept varchar(10),
+    -> emp_name varchar(10),
+    -> emp_sal int(8),
+    -> emp_comm int(9));
+Query OK, 0 rows affected, 2 warnings (0.07 sec)
+
+mysql> select * from emp1;
+Empty set (0.00 sec)
+
+mysql> source d:\
+ERROR: 
+Failed to open file 'd:\', error: 2
+mysql> 
+mysql> source d:\sql script\file.sql
+ERROR: 
+Failed to open file 'd:\sql script\file.sql', error: 2
+mysql> source d:\sql script\file.sql;
+--------------
+
+Connection id:		14
+Current database:	cdac
+Current user:		root@localhost
+SSL:			Cipher in use is TLS_AES_128_GCM_SHA256
+Using delimiter:	;
+Server version:		8.3.0 MySQL Community Server - GPL
+Protocol version:	10
+Connection:		localhost via TCP/IP
+Server characterset:	utf8mb4
+Db     characterset:	utf8mb4
+Client characterset:	cp850
+Conn.  characterset:	cp850
+TCP port:		3306
+Binary data as:		Hexadecimal
+Uptime:			1 day 18 hours 30 min 22 sec
+
+Threads: 2  Questions: 179  Slow queries: 0  Opens: 230  Flush tables: 3  Open tables: 146  Queries per second avg: 0.001
+--------------
+
+ERROR: 
+Unknown command '\f'.
+ERROR: 
+Failed to open file 'd:ql script\file.sql', error: 2
+mysql> source d:\EMP_DEPT_Script\file.sql;
+ERROR: 
+Unknown command '\E'.
+ERROR: 
+Unknown command '\f'.
+ERROR: 
+Failed to open file 'd:\EMP_DEPT_Script\file.sql', error: 2
+mysql> source d:\SQL\EMP_DEPT_Script.sql;
+ERROR: 
+Unknown command '\S'.
+ERROR: 
+Unknown command '\E'.
+ERROR 1050 (42S01): Table 'dept' already exists
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+ERROR 1050 (42S01): Table 'emp' already exists
+ERROR 1136 (21S01): Column count doesn't match value count at row 1
+ERROR 1136 (21S01): Column count doesn't match value count at row 1
+ERROR 1136 (21S01): Column count doesn't match value count at row 1
+ERROR 1136 (21S01): Column count doesn't match value count at row 1
+ERROR 1136 (21S01): Column count doesn't match value count at row 1
+ERROR 1136 (21S01): Column count doesn't match value count at row 1
+ERROR 1136 (21S01): Column count doesn't match value count at row 1
+ERROR 1136 (21S01): Column count doesn't match value count at row 1
+ERROR 1136 (21S01): Column count doesn't match value count at row 1
+ERROR 1136 (21S01): Column count doesn't match value count at row 1
+ERROR 1136 (21S01): Column count doesn't match value count at row 1
+ERROR 1136 (21S01): Column count doesn't match value count at row 1
+ERROR 1136 (21S01): Column count doesn't match value count at row 1
+ERROR 1136 (21S01): Column count doesn't match value count at row 1
+mysql> drop table emp;
+Query OK, 0 rows affected (0.06 sec)
+
+mysql> source d:\SQL\EMP_DEPT_Script.sql;
+ERROR: 
+Unknown command '\S'.
+ERROR: 
+Unknown command '\E'.
+ERROR 1050 (42S01): Table 'dept' already exists
+Query OK, 1 row affected (0.02 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 0 rows affected (0.06 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+mysql> drop table dept;
+Query OK, 0 rows affected (0.05 sec)
+
+mysql> source d:\SQL\EMP_DEPT_Script.sql;
+ERROR: 
+Unknown command '\S'.
+ERROR: 
+Unknown command '\E'.
+Query OK, 0 rows affected (0.08 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+ERROR 1050 (42S01): Table 'emp' already exists
+ERROR 1062 (23000): Duplicate entry '7369' for key 'emp.PRIMARY'
+ERROR 1062 (23000): Duplicate entry '7499' for key 'emp.PRIMARY'
+ERROR 1062 (23000): Duplicate entry '7521' for key 'emp.PRIMARY'
+ERROR 1062 (23000): Duplicate entry '7566' for key 'emp.PRIMARY'
+ERROR 1062 (23000): Duplicate entry '7654' for key 'emp.PRIMARY'
+ERROR 1062 (23000): Duplicate entry '7698' for key 'emp.PRIMARY'
+ERROR 1062 (23000): Duplicate entry '7782' for key 'emp.PRIMARY'
+ERROR 1062 (23000): Duplicate entry '7788' for key 'emp.PRIMARY'
+ERROR 1062 (23000): Duplicate entry '7839' for key 'emp.PRIMARY'
+ERROR 1062 (23000): Duplicate entry '7844' for key 'emp.PRIMARY'
+ERROR 1062 (23000): Duplicate entry '7876' for key 'emp.PRIMARY'
+ERROR 1062 (23000): Duplicate entry '7900' for key 'emp.PRIMARY'
+ERROR 1062 (23000): Duplicate entry '7902' for key 'emp.PRIMARY'
+ERROR 1062 (23000): Duplicate entry '7934' for key 'emp.PRIMARY'
+mysql> tee:\SQL\day1.txt;
+ERROR: 
+Unknown command '\S'.
+    -> tee d:\SQL\day1.txt;
+ERROR: 
+Unknown command '\S'.
+    -> tee d:\SQL\day1.commands.txt;
+ERROR: 
+Unknown command '\S'.
+    -> tee d:\SQL\day1.txt;
+ERROR: 
+Unknown command '\S'.
+    -> tee d:\SQL\day1
+ERROR: 
+Unknown command '\S'.
+    -> \! cls
+    -> show tables;
+    -> ^C
+mysql> show databases;
+    -> exit
+    -> ^C
+mysql> 
+mysql> exit
